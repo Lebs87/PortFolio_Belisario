@@ -10,10 +10,10 @@
     <!--CSS-->
     <link rel="stylesheet" href="../css/style.css">
 </head>
-<body>
+<body class="contact__body">
     
     <!--NAVBAR-->
-    <nav>
+    <nav class="zone5A">
         <ul>
             <li>
                 <a href="../../index.html">Home</a>
@@ -34,87 +34,101 @@
     </nav>  
 
     <!--CONTACT FORM-->
-    <h1>Contact</h1>      
-    <section>
-        <article>
-            <label for="name">Name:
-                <input type="text" placeholder="Ex: Luis Eduardo" name="name">
-            </label> <br>
-            <label for="email">E-mail:
-                <input type="email" placeholder="@mail.com" name="email">
-            </label> <br>
-            <label for="age">Age:
-                <input type="number" placeholder="35" name="age">
-            </label>
+    <header class="zone5B headerMargin">
+        <h2>Contact</h2>
+    </header>  
+    <form action="envio.php" class="zone5C contact__form">
+        <fieldset class="contact__form--fieldset minMargin">
+            <legend>Contact Information</legend>
             <div>
-                Sex
-            </div>
-            <div>Woman
-                <input type="radio" name="sex" value="Woman">
-            </div>
-            <div>Man
-                <input type="radio" name="sex" value="Man">
-            </div>
-            <div>Others
-                <input type="radio" name="sex" value="Others">
+                <label for="fname" class="minMargin">Name:</label>
+                <input type="text" id:="fname" placeholder="Luis" name="Fname">
             </div>
             <div>
-                Service Required?
+                <label for="lname" class="minMargin">Last Name:</label>
+                <input type="text" id:="lname" placeholder="Belisario" name="Lname">
             </div>
             <div>
-                <select name="Service" id="Service">
+                <label for="age" class="minMargin">Age:</label>
+                <input type="number" id="age" placeholder="35" max="90" min="18" name="Age">
+            </div>
+            <div class="minMargin">
+                <p>Sex</p>
+                <label for="sex" class="minMargin">Woman:</label>
+                <input type="radio" id="sex" name="Sex" value="Woman">
+                <label for="sex" class="minMargin">Man:</label>
+                <input type="radio" id="sex" name="Sex" value="Man">
+                <label for="sex" class="minMargin">Others:</label>
+                <input type="radio" id="sex" name="Sex" value="Others">
+            </div>
+            <div>
+                <label for="email" class="minMargin">E-mail:</label>
+                <input type="email" id="email" placeholder="luis@mail.com" name="Email">
+            </div>
+            <div>
+                <label for="tel" class="minMargin">Phone:</label>
+                <input type="tel" id="tel" placeholder="+0900-17288-88" name="Phone">
+            </div>
+        </fieldset>
+        <fieldset class="contact__form--fieldset minMargin">
+            <legend>Application Form</legend>
+            <div>
+                <label for="service" class="minMargin">Service Required?</label>
+                <select name="Service" id="service">
                     <option value="--">--</option>
-                    <option value="websitedesign">Website Design</option>
-                    <option value="collaborativework">Collaborative Work</option>
-                    <option value="tutoring">Tutoring</option>
+                    <option value="Website Design">Website Design</option>
+                    <option value="Collaborative Work">Collaborative Work</option>
+                    <option value="Tutoring">Tutoring</option>
                 </select>
             </div>
-            <label for="leaveyourcomment"> Leave your comment:
-                <textarea placeholder="Leave your comment"></textarea>
-            </label>
-            <div>Do you want to receive information about us?
-                <input type="checkbox" name="accept" value="1">
+            <div>
+                <label for="comment" class="minMargin">Leave your comment:</label>
+                <textarea placeholder="  Hi! I want..." id="coment" cols="30" rows="10"></textarea>
             </div>
-                <input type="submit" value="Confirm">
-                <input type="reset" value="Reset">
-            </form>
-        </article>
-    </section>
+            <div>
+                <label for="information" class="minMargin">Do you want to receive information about us?</label>
+                <input type="checkbox" id="information" name="Information" value="Yes">
+            </div>
+        </fieldset>        
+        <div class="contact__form--div">
+            <input type="reset" value="Reset" class="minMargin w20">
+            <input type="submit" value="Confirm" class="minMargin w20">
+        </div>
+    </form>
  
     <!--LOCATION-->
-    <section>
-        <h3>Location</h3>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11707.262749266916!2d86.91622032349422!3d27.988119872821105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e854a215bd9ebd%3A0x576dcf806abbab2!2sMonte%20Everest!5e1!3m2!1ses-419!2sar!4v1653875028900!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </section>
+    <aside class="zone5D textCenter">
+        <h3 class="minMargin">Location</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11707.262749266916!2d86.91622032349422!3d27.988119872821105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e854a215bd9ebd%3A0x576dcf806abbab2!2sMonte%20Everest!5e1!3m2!1ses-419!2sar!4v1653875028900!5m2!1ses-419!2sar" width="auto" height="auto" style="border: 5px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </aside>
 
     <!--FOOTER-->
-    <footer>
-
+    <footer class="zone5E">
+        <h2 class="textCenter">Socials</h2>
         <!--SOCIALS-->
-        <section>
-            <h2>Socials</h2>
-            <div>
+        <section class="footerSection">
+            <div class="socialMargin">
                 <a href="https://www.twitter.com" target="_blank">
-                    <img src="../images/twitter.png" width="60" alt="twitter">
+                    <img src="../images/twitter.png" width="60" alt="Twitter" class="backgroundImg">
                 </a>
             </div>
-            <div>
+            <div class="socialMargin">
                 <a href="https://www.linkedin.com" target="_blank">
-                    <img src="../images/linkedin.png" width="60" alt="linkedin">
+                    <img src="../images/linkedin.png" width="60" alt="Linkedin" class="backgroundImg">
                 </a>
             </div>
-            <div>
+            <div class="socialMargin">
                 <a href="https://github.com" target="_blank">
-                    <img src="../images/github.png" width="60" alt="github">
+                    <img src="../images/github.png" width="60" alt="Github" class="backgroundImg">
                 </a>
             </div>
         </section>
 
         <!--PUBLIC DOMAIN-->
-        <section>
-            <img src="../images/publicdomain.png" alt="public domain">
-            <p>2022 Luis Belisario. Web Developer.</p>
+        <section class="footerSection">
+            <img src="../images/publicdomain.png" width="100" height="40" alt="public domain">
+            <p class="domainMargin">2022 Luis Belisario. Web Developer.</p>
         </section>
-    </footer>  
+    </footer>
 </body>
 </html>

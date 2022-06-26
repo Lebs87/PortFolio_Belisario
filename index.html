@@ -10,10 +10,10 @@
     <!--CSS-->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+<body class="index__body">
  
     <!--NAVBAR-->
-    <nav>
+    <nav class="zone1A">
         <ul>
             <li>
                 <a href="">Home</a> 
@@ -34,105 +34,101 @@
     </nav>  
     
     <!--HEADER-->
-    <header>
-        <section>
-            <h1>Hello! I am Luis Eduardo Web Developer</h1>
+    <header class="zone1B index__header">
+        <section class="header__section" >
+            <h1><span class="spanTitle">Hello! I am</span><span class="textGreen spanTitle"> Luis Eduardo</span><span class="spanTitle">Web Developer</span></h1>
         </section>
-        <section>
-            <img src="./assets/images/fotoluis.JPG" width="300" alt="foto de Luis Eduardo">
+        <section class="header__section">
+            <div class="container header__section">
+            <img src="./assets/images/fotoluis.JPG" width="70%" alt="foto de Luis Eduardo" id="circle" class="image">
+                <!--<div class="overlay">
+                    <img src="./assets/images/fotoluis.JPG" width="140%" alt="foto de Luis Eduardo" class="circle secondImg">
+                </div>-->
+            </div>
         </section>
     </header>
     
     <!--MAIN-->
-    <main>
+    <main class="zone1C">
 
         <!--SERVICES-->
-        <section>
-            <h2>Services</h2>
-            <div>
-                <ul>
-                    <li>
-                        <a href="./assets/pages/service.html#responsivedesing">Website Design</a>
-                    </li>
-                    <li>
-                        <a href="./assets/pages/service.html#collaborativework">Collaborative Work</a>
-                    </li>
-                    <li>
-                        <a href="./assets/pages/service.html#tutoring">Tutoring</a>
-                    </li>
-                </ul>
-            </div>
-        </section>
+        <h2 class="titleFont-size textCenter">Services</h2>
+        <ul>
+            <li>
+                <a href="./assets/pages/service.html#responsivedesing" class="subTitleFont-size serviceMargin">Website Design</a>
+            </li>
+            <li>
+                <a href="./assets/pages/service.html#collaborativework" class="subTitleFont-size serviceMargin">Collaborative Work</a>
+            </li>
+            <li>
+                <a href="./assets/pages/service.html#tutoring" class="subTitleFont-size serviceMargin">Tutoring</a>
+            </li>
+        </ul>
 
         <!--PORTFOLIO & CHALLENGUES-->
-        <section>
-            <h2>Portfolio & Challengues</h2> 
-            <div>
-                <div>
-                    <img src="./assets/images/Challangue 1.png" width="100" alt="CSS Challengue">
-                </div>
-                <div>
-                    <h3>CSS Challengue</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit, in.</p>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <img src="./assets/images/Challangue 2.png" width="100" alt="Menu Icon Challengue">
-                </div>
-                <div>
-                    <h3>Menu Icon</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit, in.</p>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <img src="./assets/images/Challangue 3.png" width="100" alt="Statistic Challengue">
-                </div>
-                <div>
-                    <h3>Statistic</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit, in.</p>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <img src="./assets/images/Challangue 4.png" width="100" alt="Profile Challengue">
-                </div>
-                <div>
-                    <h3>Profile</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit, in.</p>
-                </div>
-            </div>
+        <h2 class="titleFont-size textCenter topMargin">Portfolio & Challengues</h2>
+        <section class="main__portfolio--section">
+            <article class="main__portfolio--article" >
+                <figure class="main__portfolio--figure">
+                    <img src="./assets/images/Challangue 1.png" width="180" alt="CSS Challengue" class="minMargin">
+                    <div class="main__portfolio--div"> 
+                        <figcaption class="minMargin2"><b>CSS Challengue</b></figcaption>
+                        <p class="minMargin">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit, in.</p>
+                    </div>   
+                </figure>
+                <figure class="main__portfolio--figure">
+                    <img src="./assets/images/Challangue 2.png" width="180" alt="Menu Icon Challengue" class="minMargin">
+                    <div class="main__portfolio--div">
+                        <figcaption class="minMargin2"><b>Menu Icon</b></figcaption>
+                        <p class="minMargin">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit, in.</p>
+                    </div>
+                </figure>
+            </article>
+            <article class="main__portfolio--article">
+                <figure class="main__portfolio--figure">
+                    <img src="./assets/images/Challangue 3.png" width="180" alt="Statistic Challengue" class="minMargin">
+                    <div class="main__portfolio--div">
+                        <figcaption class="minMargin2"><b>Statistic</b></figcaption>
+                        <p class="minMargin">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit, in.</p>
+                    </div>
+                </figure>
+                <figure class="main__portfolio--figure">
+                    <img src="./assets/images/Challangue 4.png" width="180" alt="Profile Challengue" class="minMargin">
+                    <div class="main__portfolio--div">
+                        <figcaption class="minMargin2"><b>Profile</b></figcaption>
+                        <p class="minMargin">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit, in.</p>
+                    </div>
+                </figure>
+            </article>
         </section>
     </main>
 
     <!--FOOTER-->
-    <footer>
-
+    <footer class="zone1D">
+        <h2 class="textCenter">Socials</h2>
         <!--SOCIALS-->
-        <section>
-            <h2>Socials</h2>
-            <div>
+        <section class="footerSection">
+            <div class="socialMargin">
                 <a href="https://www.twitter.com" target="_blank">
-                    <img src="assets/images/twitter.png" width="60" alt="twitter">
+                    <img src="assets/images/twitter.png" width="60" alt="Twitter" class="backgroundImg">
                 </a>
             </div>
-            <div>
+            <div class="socialMargin">
                 <a href="https://www.linkedin.com" target="_blank">
-                    <img src="assets/images/linkedin.png" width="60" alt="linkedin">
+                    <img src="assets/images/linkedin.png" width="60" alt="Linkedin" class="backgroundImg">
                 </a>
             </div>
-            <div>
+            <div class="socialMargin">
                 <a href="https://github.com" target="_blank">
-                    <img src="assets/images/github.png" width="60" alt="github">
+                    <img src="assets/images/github.png" width="60" alt="Github" class="backgroundImg">
                 </a>
             </div>
         </section>
 
         <!--PUBLIC DOMAIN-->
-        <section>
-            <img src="assets/images/publicdomain.png" alt="public domain">
-            <p>2022 Luis Belisario. Web Developer.</p>
+        <section class="footerSection">
+            <img src="assets/images/publicdomain.png" width="100" height="40" alt="public domain">
+            <p class="domainMargin">2022 Luis Belisario. Web Developer.</p>
         </section>
     </footer>
 </body>
