@@ -104,32 +104,38 @@ nav{
             background-color: hsl(240, 7%, 8%);
             opacity: 80%;
             border-radius: 5rem;
+            /*prueba*/
+            background-image: linear-gradient(currentColor, currentColor);
+            background-position: 50% 80%;
+            background-repeat: no-repeat;
+            background-size: 0% 2px;
+            transition: background-size 0.4s;
         }
         nav ul li a:hover{
             color:hsl(38, 100%, 65%);
             font-weight: 700;
-            border-right: solid .2rem;
-            border-left: solid .2rem;
-            border-radius: 5rem;
+            cursor: pointer;
+            /*prueba*/
+            background-size: 90% 2px;
         }
 ul{
     list-style: none;
 }
-    ul li a{
+    main ul li a{
         color: hsl(148, 100%, 93%);
         text-decoration: none;
-        font-size: 2.5rem;
         font-family: 'Nunito Sans', sans-serif;
-        font-weight: 400;
-        margin: 2rem .5rem;
-        padding: 0rem .5rem;
+        background-image: linear-gradient(currentColor, currentColor);
+        background-position: 50% 80%;
+        background-repeat: no-repeat;
+        background-size: 0% 2px;
+        transition: background-size 0.4s;
     }        
-    ul li a:hover{
+    main ul li a:hover{
         color: hsl(38, 100%, 65%);
         font-weight: 700;
-        border-right: solid .2rem;
-        border-left: solid .2rem;
-        border-radius: 5rem;
+        background-size: 80% 2px;
+        cursor: pointer;
     }        
 p{
     font-family: 'Nunito Sans', sans-serif;
@@ -170,6 +176,9 @@ p{
 }
 .alineContainCenter{
     align-content: center;
+}
+.button:hover{
+    cursor: pointer;
 }
 
     /*SECTION*/
@@ -662,6 +671,30 @@ main.zone4B section p{
     }
 }
 
+/* ---------------- ANIMATIONS ----------------------------------------------------*/
+
+.spanEfect{
+    position: relative;
+}
+h1 span .developerEfect{
+    position: absolute;
+    right: 0;
+    width: 67%;
+    background-image: url(../images/realezaOscuro.jpg);
+    background-attachment: fixed;
+    border-left: 1px solid rgb(248, 245, 245);
+    animation: machine 1.5s infinite alternate steps(10);
+    animation-delay: 0s;  
+}
+@keyframes machine{
+    front{
+        width: 100%;
+    }
+    to{
+        width: 0%;
+    }
+}
+
 
 /* -----------   Imagen sobre imagen para incluir mas adelante   --------------------
 .container{
@@ -697,3 +730,6 @@ main.zone4B section p{
     align-items: center;
 }
 */
+            /*border-right: solid .2rem;
+            border-left: solid .2rem;
+            border-radius: 5rem;*/
