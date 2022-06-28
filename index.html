@@ -9,6 +9,9 @@
 
     <!--CSS-->
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <!--WOW-->
+    <link rel="stylesheet" href="assets/css/animate.css">
 </head>
 <body class="index__body">
  
@@ -36,7 +39,7 @@
     <!--HEADER-->
     <header class="zone1B index__header">
         <section class="header__section" >
-            <h1><span class="spanTitle">Hello! I am</span><span class="textGreen spanTitle"> Luis Eduardo</span><span class="spanTitle">Web Developer</span></h1>
+            <h1><span class="spanTitle">Hello! I am</span><span class="textGreen spanTitle"> Luis Eduardo</span><span class="spanTitle spanEfect">Web Developer    .<span class="developerEfect">&#160;</span></span></h1>
         </section>
         <section class="header__section">
             <div class="container header__section">
@@ -72,14 +75,14 @@
                 <figure class="main__portfolio--figure">
                     <img src="./assets/images/Challangue 1.png" width="180" alt="CSS Challengue" class="minMargin">
                     <div class="main__portfolio--div"> 
-                        <figcaption class="minMargin2"><b>CSS Challengue</b></figcaption>
+                        <figcaption class="minMargin2 wow pulse" data-wow-offset="10" data-wow-iteration="2" data-wow-delay="0.1s"><b>CSS Challengue</b></figcaption>
                         <p class="minMargin">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit, in.</p>
                     </div>   
                 </figure>
                 <figure class="main__portfolio--figure">
                     <img src="./assets/images/Challangue 2.png" width="180" alt="Menu Icon Challengue" class="minMargin">
                     <div class="main__portfolio--div">
-                        <figcaption class="minMargin2"><b>Menu Icon</b></figcaption>
+                        <figcaption class="minMargin2 wow pulse" data-wow-offset="10" data-wow-iteration="2" data-wow-delay="2s"><b>Menu Icon</b></figcaption>
                         <p class="minMargin">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit, in.</p>
                     </div>
                 </figure>
@@ -88,14 +91,14 @@
                 <figure class="main__portfolio--figure">
                     <img src="./assets/images/Challangue 3.png" width="180" alt="Statistic Challengue" class="minMargin">
                     <div class="main__portfolio--div">
-                        <figcaption class="minMargin2"><b>Statistic</b></figcaption>
+                        <figcaption class="minMargin2 wow pulse" data-wow-offset="10" data-wow-iteration="2" data-wow-delay="4s"><b>Statistic</b></figcaption>
                         <p class="minMargin">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit, in.</p>
                     </div>
                 </figure>
                 <figure class="main__portfolio--figure">
                     <img src="./assets/images/Challangue 4.png" width="180" alt="Profile Challengue" class="minMargin">
                     <div class="main__portfolio--div">
-                        <figcaption class="minMargin2"><b>Profile</b></figcaption>
+                        <figcaption class="minMargin2 wow pulse" data-wow-offset="10" data-wow-iteration="2" data-wow-delay="6s"><b>Profile</b></figcaption>
                         <p class="minMargin">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit, in.</p>
                     </div>
                 </figure>
@@ -131,5 +134,10 @@
             <p class="domainMargin">2022 Luis Belisario. Web Developer.</p>
         </section>
     </footer>
+
+    <script src="assets/js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
 </body>
 </html>
